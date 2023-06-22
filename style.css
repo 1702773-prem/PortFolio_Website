@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.862);
+}
+
+header{
+    
+   
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.logo-container{
+    width: 4.5%;
+    border: 3px solid rgba(238, 236, 236, 0.281);
+    border-radius: 50%;
+    
+
+   
+}
+
+.logo img{
+    width: 100%;
+    height: 55px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.header-content{
+    width: 75%;
+    margin-right: 3rem;
+
+}
+
+.header-content ul{
+    display: flex;
+    justify-content:flex-end;
+    gap: 5rem;
+    list-style-type: none;
+   
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.693);
+    
+}
+
+#hire-me-btn{
+   
+    padding: 1rem;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.353);
+    color: rgb(247, 5, 5);
+    font-size: 1.5rem;
+    font-weight:600;
+    background-color: black;
+    
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 0rem;
+    color: white;
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-basis: 50%;
+ 
+    
+    gap: 12rem;
+}
+
+
+.intro{
+    grid-column: 1/3;
+    
+    
+}
+
+.social-icon-container, .skills-container{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.732);
+
+}
+
+.social-icon, .skills{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 1rem;
+      gap: 2rem;
+      font-size: 2rem;
+      
+      
+}
+
+.img-content{
+    background-color: rgba(0, 0, 0, 0.238);
+    
+    width: 31%;
+    
+    text-align: center;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.img-content img{
+    position: absolute;
+    top: -15%;
+    left: 0;
+  
+    
+    
+}
+h1{
+    font-size: 5rem;
+}
+
+h5,p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.732);
+    margin: 1.5rem 0;
+  
+}
