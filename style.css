@@ -1,151 +1,222 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: sans-serif;
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.862);
 }
 
-header{
-    
-   
-    padding: 1rem;
+header {
+
+
+    padding: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
-  
+
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+
 }
 
-.logo-container{
+.logo-container {
     width: 4.5%;
     border: 3px solid rgba(238, 236, 236, 0.281);
     border-radius: 50%;
-    
 
-   
+
+
 }
 
-.logo img{
+.logo img {
     width: 100%;
     height: 55px;
     border-radius: 50%;
     padding: 5px;
-    
+
 }
 
-.header-content{
+.header-content {
     width: 75%;
     margin-right: 3rem;
 
 }
 
-.header-content ul{
+.header-content ul {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     gap: 5rem;
     list-style-type: none;
-   
-    
+
+
 }
 
-a{
+a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.693);
-    
+
 }
 
-#hire-me-btn{
-   
+#hire-me-btn {
+
     padding: 1rem;
     border: none;
     border-radius: 3rem;
     box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.353);
     color: rgb(247, 5, 5);
     font-size: 1.5rem;
-    font-weight:600;
+    font-weight: 600;
     background-color: black;
-    
+
 }
 
-.intro-container{
+main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 10rem;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
     gap: 2rem;
     padding: 10rem 0rem;
     color: white;
 }
 
-.intro-content{
+.intro-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-basis: 50%;
- 
-    
+
+
     gap: 12rem;
 }
 
 
-.intro{
+.intro {
     grid-column: 1/3;
-    
-    
+
+
 }
 
-.social-icon-container, .skills-container{
+.social-icon-container,
+.skills-container {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.732);
 
 }
 
-.social-icon, .skills{
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 1rem;
-      gap: 2rem;
-      font-size: 2rem;
-      
-      
+.social-icon,
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    gap: 2rem;
+    font-size: 2rem;
+
+
 }
 
-.img-content{
+.img-content {
     background-color: rgba(0, 0, 0, 0.238);
-    
-    width: 31%;
-    
+
+    width: 38%;
+
     text-align: center;
     position: relative;
     border-radius: 2rem;
 }
 
-.img-content img{
+.img-content img {
     position: absolute;
-    top: -15%;
+    top: -20%;
     left: 0;
-  
-    
-    
-}
-h1{
-    font-size: 5rem;
+
+
+
 }
 
-h5,p{
+h1 {
+    font-size: 5rem;
+    
+    
+}
+h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+h5,
+p {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.732);
     margin: 1.5rem 0;
-  
+
 }
+
+.feature-container, .portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10rem 0;
+    
+
+}
+
+.feature, .portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  
+   
+  
+   
+}
+
+.feature-item , .portfolio-item
+{  
+    margin-right: 2rem;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 2rem;
+   
+    
+   
+}
+
+.portfolio-container{
+    align-items: center;
+}
+
+.portfolio{
+    margin-top: 2rem;
+}
+
+.portfolio-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+i,a{
+    color:white;
+    font-size: 1.5rem;
+}
+
+img{
+    width: 100%; 
+    
+}
+
+
