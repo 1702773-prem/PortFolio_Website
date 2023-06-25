@@ -14,8 +14,6 @@ body {
 }
 
 header {
-
-
     padding: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -33,9 +31,6 @@ header {
     width: 4.5%;
     border: 3px solid rgba(238, 236, 236, 0.281);
     border-radius: 50%;
-
-
-
 }
 
 .logo img {
@@ -43,7 +38,16 @@ header {
     height: 55px;
     border-radius: 50%;
     padding: 5px;
+    padding-left: 1.5rem;
+}
 
+.logo-container a {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
 
 .header-content {
@@ -57,30 +61,28 @@ header {
     justify-content: flex-end;
     gap: 5rem;
     list-style-type: none;
-
-
 }
 
-a {
+.list a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.693);
-
 }
 
 #hire-me-btn {
 
     padding: 1rem;
     border: none;
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.353);
     color: rgb(247, 5, 5);
     font-size: 1.5rem;
     font-weight: 600;
     background-color: black;
+    cursor: pointer;
 
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     margin: 0 10rem;
@@ -98,24 +100,18 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-basis: 50%;
-
-
     gap: 12rem;
 }
 
 
 .intro {
     grid-column: 1/3;
-
-
 }
 
 .social-icon-container,
 .skills-container {
     font-size: 1.5rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.732);
-
 }
 
 .social-icon,
@@ -124,16 +120,29 @@ main{
     justify-content: flex-start;
     margin-top: 1rem;
     gap: 2rem;
-    font-size: 2rem;
-
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.877);
+    
 
 }
 
+
+.social-icon a,
+.skills a{
+    color: white;
+}
+
+.social-icon a :hover,
+.skills a :hover{
+    color: rgba(255, 255, 255, 0.299);
+}
+
+
+
+
 .img-content {
     background-color: rgba(0, 0, 0, 0.238);
-
     width: 38%;
-
     text-align: center;
     position: relative;
     border-radius: 2rem;
@@ -143,17 +152,13 @@ main{
     position: absolute;
     top: -20%;
     left: 0;
-
-
-
 }
 
 h1 {
     font-size: 5rem;
-    
-    
 }
-h2{
+
+h2 {
     color: white;
     font-size: 2.5rem;
 }
@@ -166,57 +171,207 @@ p {
 
 }
 
-.feature-container, .portfolio-container{
+.feature-container,
+.portfolio-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 10rem 0;
-    
+
 
 }
 
-.feature, .portfolio{
+.feature,
+.portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-  
-   
-  
-   
+
 }
 
-.feature-item , .portfolio-item
-{  
+.feature-item,
+.portfolio-item {
     margin-right: 2rem;
     background-color: black;
     padding: 2rem;
     border-radius: 2rem;
-   
-    
-   
+}
+.portfolio-item a {
+    text-decoration: none;
+    color: red;
 }
 
-.portfolio-container{
+
+.portfolio-container {
     align-items: center;
 }
 
-.portfolio{
+.portfolio {
     margin-top: 2rem;
+
 }
 
-.portfolio-action{
+.portfolio-img {
+    overflow: hidden;
+    width: 95%;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.portfolio-img img {
+    width: 100%;
+    transition: transform 0.6s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio-action {
     display: flex;
     justify-content: space-between;
 }
 
-i,a{
-    color:white;
+.portfolio-action i,
+.portfolio-action a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.portfolio-action a{
+    color: red;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+
+}
+
+.contact-detail {
+    width: 35%;
+    padding: 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.227);
+    border-radius: 1rem;
+
+
+}
+
+.contact-img {
+    width: 95%;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+}
+
+.contact-img img {
+    width: 100%;
+    margin: auto;
+    border-radius: 2rem;
+    transition: transform 0.6s;
+
+}
+
+.contact-img img:hover {
+    transform: scale(1.2);
+
+}
+
+.detail {
+    padding: 0 2rem;
+}
+
+.contact-form {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.227);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.611);
     font-size: 1.5rem;
 }
 
-img{
-    width: 100%; 
-    
+input {
+
+    padding-top: 2rem;
+    border-radius: 0.7rem;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.214);
+
+}
+
+#email {
+    grid-column: 1/3;
+
+}
+
+#subject {
+    grid-column: 1/3;
+
+}
+
+#msg {
+    grid-column: 1/3;
+    margin-top: 1rem;
 }
 
 
+textarea {
+    border-radius: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.214);
+    margin-top: 1rem;
+}
+
+
+#send-message {
+    grid-column: 1/3;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.214);
+    cursor: pointer;
+    border-radius: 0.7rem;
+
+}
+
+#send-message button {
+    background-color: rgba(0, 0, 0, 0.214);
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+}
+
+footer i {
+    margin-right: 2rem;
+}
+
+hr {
+
+    border: 1px solid black;
+}
