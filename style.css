@@ -18,6 +18,7 @@ header {
     padding-right: 15rem;
     font-size: 1.5rem;
     font-weight: 500;
+    
 
 }
 
@@ -65,22 +66,22 @@ header {
     list-style-type: none;
 }
 
-.list a{
+li a{
     text-decoration: none;
-    
     color: rgba(255, 255, 255, 0.441);
+   
 }
 
-.list a:visited{
+li a:visited{
     color: white;
 }
-.list a:hover{
+li a:hover{
     color: red;
 }
 
-.list a:active{
+.focus {
     color: white;
-}
+  }
 
 
 #hire-me-btn{
@@ -198,6 +199,7 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 10rem 0;
+    
 
 
 }
@@ -216,17 +218,41 @@ p {
     background-color: black;
     padding: 2rem;
     border-radius: 2rem;
+    transition: color 1s;
 }
 
 .portfolio-item a {
     text-decoration: none;
+}
+
+a h2{
+    transition: color 0.3s linear;
+}
+
+a h2:hover{
     color: red;
+}
+
+
+
+ .icon {
+    font-size: 1rem;
+    transition: all 0.3s linear;
+    margin-left: 1rem;
+    
+}
+
+
+a:hover .icon {
+    transform: scale(2.8);
+   
 }
 
 
 .portfolio-container {
     align-items: center;
 }
+
 
 .portfolio {
     margin-top: 2rem;
@@ -264,6 +290,8 @@ p {
 .portfolio-action a {
     color: red;
 }
+
+
 
 
 .resume-container {
@@ -305,9 +333,7 @@ span {
     font-size: 2rem;
 }
 
-.education-qualification{
-    
-}
+
 
 
 
@@ -477,4 +503,12 @@ hr {
 
     border: 1px solid black;
 
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.862);
+    
 }
