@@ -147,17 +147,24 @@ main {
 
 }
 
+.brand-container{
+    position: relative;
+  padding: 2rem 4rem 2rem 0rem;
+ 
+}
 
-.social-icon a,
-.skills a {
+.brand{
+    position: absolute;
+  
+    padding: 0rem 1rem;
+    background-color: rgba(0, 0, 0, 0.503);
+    border-radius: 1rem;
+}
+
+
+.brand a {
     color: white;
 }
-
-.social-icon a :hover,
-.skills a :hover {
-    color: rgba(255, 255, 255, 0.299);
-}
-
 
 
 
@@ -328,12 +335,25 @@ a:hover .icon {
     cursor: pointer;
 }
 
+.change-heading-title{
+    background-color: white;
+   }
+   .change-heading-color{
+    color: black;
+   }
+
 span {
     color: white;
     font-size: 2rem;
 }
 
+.hide{
+    display: none;
+}
 
+.show{
+    display: block;
+}
 
 
 
@@ -354,11 +374,11 @@ td {
 
 }
 
-.skill{
+#skill{
     display: none;
 }
 
-.learning{
+#learning{
     display: none;
 }
 
@@ -368,7 +388,7 @@ td {
 }
 
 
-.interest{
+#interest{
     display: none;
 }
 
@@ -390,7 +410,7 @@ td {
 
 .contact-detail {
     width: 35%;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     background-color: rgba(0, 0, 0, 0.227);
     border-radius: 1rem;
 
@@ -423,6 +443,7 @@ td {
 }
 
 .contact-form {
+
     width: 65%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -440,10 +461,12 @@ label {
 
 input {
 
-    padding-top: 2rem;
+    padding: 1rem;
     border-radius: 0.7rem;
     margin-top: 1rem;
     background-color: rgba(0, 0, 0, 0.214);
+    color: white;
+    
 
 }
 
@@ -467,6 +490,7 @@ textarea {
     border-radius: 0.7rem;
     background-color: rgba(0, 0, 0, 0.214);
     margin-top: 1rem;
+    color: white;
 }
 
 
@@ -495,8 +519,8 @@ footer {
     margin: 4rem;
 }
 
-footer i {
-    margin-right: 2rem;
+footer p{
+    margin-top: 4rem;
 }
 
 hr {

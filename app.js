@@ -1,7 +1,12 @@
 
+
+// JQuery Code
+
+
 $(document).ready(function () {
 
     // HIRE ME button in header section
+    // When we hover on hire-me-button -> button move to top.
 
     $("#hire-me-btn").hover(function () {
 
@@ -19,6 +24,26 @@ $(document).ready(function () {
             $(this).find('a').addClass('focus');
           });
 
+
+        // set the background color white and text color black after clicking on heading title
+
+          $('.heading-title').click(function() {
+            $(this).siblings().removeClass('change-heading-title');
+            $(this).siblings().find('span').removeClass('change-heading-color');
+            $(this).addClass('change-heading-title');
+            $(this).find('span').addClass('change-heading-color');
+           
+           });
+
+          // When we hover on icons  -> icons move to top like a hire-me-btn.
+
+          $(".brand").hover(function () {
+
+            $(this).animate({ top: '10px' },500);
+        },
+            function () {
+                $(this).animate({ top: '18px' },500);
+            })
 
 /*
 
@@ -49,6 +74,10 @@ if(window.scrollY > initialCoords.top-1)
       
 });
 
+
+// JavaScript Code
+
+
 // made the header sticky using JavaScript ( IntersectionObserver API)
 
 const header = document.querySelector('#header');
@@ -74,6 +103,53 @@ const obsOptions ={
 
 const observer = new IntersectionObserver(stickyHeader,obsOptions);
 observer.observe(home);
+
+
+// Change the content of resume dynamically when we click on header title. 
+
+const education =document.getElementById('education');
+const skills =document.getElementById('skills');
+const experiences =document.getElementById('experiences');
+const intrst =document.getElementById('intrst');
+const educationQualification = document.getElementById('education-qualification');
+
+education.addEventListener('click',function(){
+         educationQualification.style.display='block';
+         skill.style.display='none';
+         learning.style.display='none';
+         interest.style.display='none';
+         
+})
+
+const skill = document.getElementById('skill');
+
+skills.addEventListener('click',function(){
+    educationQualification.style.display='none';
+    skill.style.display='block';
+    learning.style.display='none';
+    interest.style.display='none';
+
+})
+
+const learning = document.getElementById('learning');
+
+experiences.addEventListener('click',function(){
+    educationQualification.style.display='none';
+    skill.style.display='none';
+    learning.style.display='block';
+    interest.style.display='none';
+   
+})
+
+const interest = document.getElementById('interest');
+
+intrst.addEventListener('click',function(){
+    educationQualification.style.display='none';
+    skill.style.display='none';
+    learning.style.display='none';
+    interest.style.display='block';
+   
+})
 
 
 
