@@ -11,14 +11,15 @@ body {
     font-family: sans-serif;
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.862);
+    position: relative;
 }
 
 header {
-    padding: 2rem;
+    padding: 1.5rem;
     padding-right: 15rem;
     font-size: 1.5rem;
     font-weight: 500;
-    
+
 
 }
 
@@ -66,25 +67,26 @@ header {
     list-style-type: none;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.441);
-   
+
 }
 
-li a:visited{
+li a:visited {
     color: white;
 }
-li a:hover{
+
+li a:hover {
     color: red;
 }
 
 .focus {
     color: white;
-  }
+}
 
 
-#hire-me-btn{
+#hire-me-btn {
     position: absolute;
     right: -5rem;
 }
@@ -121,12 +123,39 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-basis: 50%;
-    gap: 12rem;
+    gap: 4rem;
 }
 
 
 .intro {
     grid-column: 1/3;
+}
+
+
+
+.is-visible {
+    display: inline-block;
+    opacity: 1;
+}
+
+.is-hidden {
+    display: none;
+    opacity: 0;
+}
+
+#role1 {
+    color: greenyellow;
+    font-size: 4rem;
+}
+
+#role2 {
+    color: yellow;
+    font-size: 4rem;
+}
+
+#role3 {
+    color: blueviolet;
+    font-size: 4rem;
 }
 
 .social-icon-container,
@@ -147,15 +176,15 @@ main {
 
 }
 
-.brand-container{
+.brand-container {
     position: relative;
-  padding: 2rem 4rem 2rem 0rem;
- 
+    padding: 2rem 4rem 2rem 0rem;
+
 }
 
-.brand{
+.brand {
     position: absolute;
-  
+
     padding: 0rem 1rem;
     background-color: rgba(0, 0, 0, 0.503);
     border-radius: 1rem;
@@ -178,8 +207,9 @@ main {
 
 .img-content img {
     position: absolute;
-    top: -20%;
-    left: 0;
+    height: 110%;
+    top: -15%;
+    left: 4%;
 }
 
 h1 {
@@ -206,7 +236,7 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: 10rem 0;
-    
+
 
 
 }
@@ -232,27 +262,30 @@ p {
     text-decoration: none;
 }
 
-a h2{
+
+a h2, .portfolio-item h2 {
     transition: color 0.3s linear;
 }
 
-a h2:hover{
+a h2:hover , .portfolio-item h2:hover {
     color: red;
+    cursor: pointer;
 }
 
 
 
- .icon {
+.icon {
     font-size: 1rem;
     transition: all 0.3s linear;
     margin-left: 1rem;
-    
+
 }
 
 
-a:hover .icon {
+a:hover .icon, .portfolio-item h2:hover .icon {
     transform: scale(2.8);
-   
+
+
 }
 
 
@@ -271,6 +304,7 @@ a:hover .icon {
     width: 95%;
     margin: auto;
     border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio-img img {
@@ -282,24 +316,6 @@ a:hover .icon {
     transform: scale(1.2);
 }
 
-.portfolio-action {
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolio-action i,
-.portfolio-action a {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.portfolio-action a {
-    color: red;
-}
-
-
-
 
 .resume-container {
     width: 60%;
@@ -308,7 +324,7 @@ a:hover .icon {
     justify-content: center;
     align-items: center;
     margin: 10rem auto;
-  
+
 }
 
 .resume-heading {
@@ -335,27 +351,26 @@ a:hover .icon {
     cursor: pointer;
 }
 
-.change-heading-title{
+.change-heading-title {
     background-color: white;
-   }
-   .change-heading-color{
+}
+
+.change-heading-color {
     color: black;
-   }
+}
 
 span {
     color: white;
     font-size: 2rem;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
-
-
 
 table {
     width: 100%;
@@ -374,21 +389,22 @@ td {
 
 }
 
-#skill{
+#skill {
     display: none;
 }
 
-#learning{
+#learning {
     display: none;
 }
 
-.learning-container, .Interest-container{
+.learning-container,
+.Interest-container {
     color: white;
     font-size: 2rem;
 }
 
 
-#interest{
+#interest {
     display: none;
 }
 
@@ -442,16 +458,21 @@ td {
     padding: 0 2rem;
 }
 
+.form {
+    background-color: rgba(0, 0, 0, 0.227);
+    width: 65%;
+    border-radius: 1rem;
+}
+
 .contact-form {
 
-    width: 65%;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(0, 0, 0, 0.227);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    padding: 4rem 2rem;
+
 }
 
 label {
@@ -461,12 +482,14 @@ label {
 
 input {
 
+    width: 100%;
     padding: 1rem;
     border-radius: 0.7rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     background-color: rgba(0, 0, 0, 0.214);
     color: white;
-    
+
 
 }
 
@@ -489,12 +512,13 @@ input {
 textarea {
     border-radius: 0.7rem;
     background-color: rgba(0, 0, 0, 0.214);
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: white;
 }
 
 
 #send-message {
+    margin-top: 2rem;
     grid-column: 1/3;
     text-align: center;
     width: 100%;
@@ -519,7 +543,7 @@ footer {
     margin: 4rem;
 }
 
-footer p{
+footer p {
     margin-top: 4rem;
 }
 
@@ -529,10 +553,62 @@ hr {
 
 }
 
-.sticky{
+.sticky {
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.862);
-    
+
+}
+
+.hire-me-section {
+    display: none;
+    position: relative;
+    width: 40%;
+    margin-top: 10rem;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.862);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.hire-heading h2 {
+    color: white;
+    text-align: center;
+}
+
+.close-button{
+
+   position: absolute;
+   right: 1%;
+   top: 1%;
+   cursor: pointer;
+
+}
+
+.btn{
+    margin-top: 2rem;
+   padding: 3px 1rem;
+   cursor: pointer;
+}
+
+.project{
+    display: none;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: 5%;
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.project-image{
+    display: flex;
+    justify-content: center;
+}
+
+.project ul li{
+    font-size: 1.5rem;
 }
