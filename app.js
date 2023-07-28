@@ -86,16 +86,16 @@ $(document).ready(function () {
     $("#hire-me-btn").click(function () {
         $(".hire-me-section").fadeIn(500);
         $(".All").fadeOut(0);
-        $("li").find('a').css({color:" rgba(255, 255, 255, 0.441)"});
-        
+        $("li").find('a').css({ color: " rgba(255, 255, 255, 0.441)" });
+        $(".menu-item").animate({ "right": "-200px" });
 
     })
 
     $("#close-button1").click(function () {
         $(".hire-me-section").fadeOut(0);
         $(".All").fadeIn(500);
-      //  document.documentElement.scrollTop = 0
-        
+        //  document.documentElement.scrollTop = 0
+
     })
 
 
@@ -107,6 +107,7 @@ $(document).ready(function () {
         $(".project1").fadeIn(500);
         $(".All").fadeOut(0);
         document.documentElement.scrollTop = 0
+        $(".menu-item").animate({ "right": "-200px" });
 
     })
 
@@ -114,6 +115,7 @@ $(document).ready(function () {
         $(".project2").fadeIn(500);
         $(".All").fadeOut(0);
         document.documentElement.scrollTop = 0
+        $(".menu-item").animate({ "right": "-200px" });
 
     })
 
@@ -121,6 +123,7 @@ $(document).ready(function () {
         $(".project3").fadeIn(500);
         $(".All").fadeOut(0);
         document.documentElement.scrollTop = 0
+        $(".menu-item").animate({ "right": "-200px" });
 
     })
 
@@ -132,6 +135,17 @@ $(document).ready(function () {
         // portfolioContainer.scrollIntoView({ behavior: 'smooth' });
         document.documentElement.scrollTop = 1800
     })
+
+    // Clicking on menu button menu option will show on page 
+    // this work only for small device. implemented this logic to make website responsive
+
+    $(".menu-btn").click(function () {
+        $(".menu-item").animate({ "right": "0" }, 500);
+    });
+
+    $(".close-btn").click(function () {
+        $(".menu-item").animate({ "right": "-200px" }, 500);
+    });
 
 
 
