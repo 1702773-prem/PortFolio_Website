@@ -103,6 +103,7 @@ $(document).ready(function () {
     // and a project description will fade in and when we will click on close button
     //  project description will fade out and Html page will fade in
 
+    /*
     $("#portfolio-item1").click(function () {
         $(".project1").fadeIn(500);
         $(".All").fadeOut(0);
@@ -135,6 +136,8 @@ $(document).ready(function () {
         // portfolioContainer.scrollIntoView({ behavior: 'smooth' });
         document.documentElement.scrollTop = 1800
     })
+
+    */
 
     // Clicking on menu button menu option will show on page 
     // this work only for small device. implemented this logic to make website responsive

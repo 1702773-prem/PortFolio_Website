@@ -106,14 +106,13 @@ li a:hover {
 
 }
 
-.menu-btn{
+.menu-btn {
     color: white;
     font-size: 3rem;
     display: none;
 }
 
-.menu-item
-{
+.menu-item {
     display: none;
 }
 
@@ -217,7 +216,6 @@ main {
 
 
 .img-content {
-    background-color: rgba(0, 0, 0, 0.238);
     width: 30%;
     text-align: center;
     position: relative;
@@ -225,10 +223,11 @@ main {
 }
 
 .img-content img {
+    border-radius: 2rem;
     position: absolute;
     width: 90%;
-    height: 110%;
-    top: -15%;
+    height: 100%;
+    top: -8%;
     left: 4%;
 }
 
@@ -324,6 +323,7 @@ a:hover .icon,
 .portfolio-img {
     overflow: hidden;
     width: 95%;
+    height: 80%;
     margin: auto;
     border-radius: 2rem;
     margin-bottom: 1rem;
@@ -634,7 +634,8 @@ hr {
     display: flex;
     justify-content: center;
 }
-.project-image img{
+
+.project-image img {
     width: 90%;
 }
 
