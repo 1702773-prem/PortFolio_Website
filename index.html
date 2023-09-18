@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="All">
+    <div class="app">
         <header id="header">
             <div class="header-container">
                 <div class="logo-container">
@@ -36,7 +36,6 @@
                     <i class="fa-solid fa-bars"></i>
 
                 </div>
-                <button id="hire-me-btn">HIRE ME</button>
             </div>
         </header>
 
@@ -95,37 +94,25 @@
                         <div class="skills">
                             <div class="brand-container">
                                 <div class="brand">
-                                    <i class="fa-brands fa-html5"></i></a>
+                                    <i class="fa-brands fa-html5"></i>
                                 </div>
                             </div>
                             <div class="brand-container">
                                 <div class="brand">
-                                    <a href=""><i class="fa-brands fa-css3"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="brand-container">
-                                <div class="brand">
-
-                                    <a href=""><i class="fa-brands fa-js"></i></a>
+                                    <i class="fa-brands fa-css3"></i>
                                 </div>
                             </div>
 
                             <div class="brand-container">
                                 <div class="brand">
-                                    <a href=""><i class="fa-brands fa-react"></i></a>
+
+                                    <i class="fa-brands fa-js"></i>
                                 </div>
                             </div>
 
                             <div class="brand-container">
                                 <div class="brand">
-                                    <a href=""><i class="fa-brands fa-node"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="brand-container">
-                                <div class="brand">
-                                    <a href=""><i class="fa-brands fa-css3"></i></a>
+                                    <i class="fa-brands fa-react"></i>
                                 </div>
                             </div>
 
@@ -604,264 +591,6 @@
 
     </div>
 
-    <div class="hire-me-section">
-
-        <div class="hire-heading">
-            <h2>Fill this Form</h2>
-            <h2>I will contact you.</h2>
-        </div>
-
-        <form class="row g-3" action="index.html">
-            <div class="col-md-8">
-                <label for="inputName4" class="form-label">Organization Name</label>
-                <input type="text" class="form-control" id="inputName4" required>
-            </div>
-            <div class="col-md-8">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
-            </div>
-            <div class="col-18">
-                <label for="inputNumber" class="form-label">Phone-number</label>
-                <input type="tel" class="form-control" id="inputNumber" minlength="10" maxlength="10" required>
-            </div>
-
-            <div class="col-md-8">
-                <label for="inputState" class="form-label">Interseted Role :</label>
-                <select id="inputRole" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>React Developer</option>
-                    <option>FrontEnd Developer</option>
-                    <option>BackEnd Developer</option>
-                    <option>FullStack Developer</option>
-                </select>
-
-                <label for="inputCity" class="form-label">City :</label>
-                <select id="inputCity" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>Chandigarh</option>
-                    <option>Mohali</option>
-                    <option>Delhi</option>
-                    <option>Noida</option>
-                    <option>other</option>
-                </select>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary ">Submit</button>
-            </div>
-        </form>
-
-        <button type="button" class="btn-close btn-close-white close-button" id="close-button1"
-            aria-label="Close">❌</button>
-    </div>
-
-    /* <div class="project1 project">
-        <h2 style="text-align: center; margin-bottom: 4rem;">ATM Simulation System</h2>
-        <h2>Project Objective</h2>
-        <p> The aim of the ATM Simulation System project is to build a Java based ATM (Automated Teller Machine)
-            Simulation System. The introduction of ATM’s by various banks have brought about freedom from the
-            interminable queues in front of withdrawal counters at banks. This ATM Simulation System requires the
-            constant updating of records between the bank servers and a spread out network of ATM’s.</p>
-        <div class="project-image">
-            <img src="image\ATM-Simulation-system.png" alt="">
-        </div>
-        <p>Security is the foundation of a good ATM system. This system will provide for secure authenticated
-            connections between users and the bank servers. The whole process will be automated right from PIN (Personal
-            Identification Number) validation to transaction completion. ATM Simulation System will enable two important
-            features of an ATM, reduction of human error in the banking system and the possibility of 24 hour personal
-            banking. The card details and PIN database will be a secure module that will not be open to routine
-            maintenance, the only possibility of access to this database will be through queries raised from an ATM in
-            the presence of a valid bank ATM card.</p>
-        <p> Modern day banking means that a person who deposits money in a bank branch may actually require to withdraw
-            the same amount some 100 – 200 km’s away within 6 hours of the deposit. This requires the presence of
-            accurate and constantly updated bank records. This will be possible due to a secure internet connection from
-            the different bank branches to a central bank server connected further in a secure fashion to different
-            ATM’s at different locations. This system will have a Graphical User Interface which will make the whole
-            process user friendly. There will be a small learning curve for new users but tutorials available at the ATM
-            will ensure anyone can be an ATM expert in 2 minutes.</p>
-        <p> Any computerized system is susceptible to failure but failure in an ATM system can be catastrophic and even
-            lead to monetary loss. Scheduled on – site maintenance can ensure secure software upgrades and help avoid
-            potential failure. The ATM will be programmed to notify the bank about impending maintenance and will go
-            into a lock down mode in the event of delays of more than 7 days in the maintenance.</p>
-        <h2>Existing System</h2>
-        <p> The existing ATM Simulation System was built for the original concept of regional private banks. Small banks
-            in villages and towns will service the needs of the local community and will only require ledgers to record
-            account details. This system is prone to human error and causes undue frustration to users. This system was
-            augmented with the introduction of excel sheets and emails. Banks could now record all information in an
-            excel sheet and then set an update schedule when they will mail all records to a central hub where these
-            records will again be processed and consolidated to form a unified record of all account transactions. These
-            systems did not enable easy access to money and were greatly prone to grievous errors.</p>
-        <h2>Proposed System</h2>
-        <p> The proposed system aims to solve all this by constant updating of bank records. The Java based construction
-            of the system will enable transactions at any bank or ATM to be registered within a matter of seconds.
-            Security of these details is also a top priority in this system. This central hub will be accessed by an ATM
-            for secure customer transactions.
-
-        </p>
-        <h2>Software Requirements</h2>
-        <ul>
-            <li>Apache Tomcat Web Server</li>
-            <li>Oracle</li>
-        </ul>
-        <h2>Technology Used</h2>
-        <ul>
-            <li>Java</li>
-            <li>J2EE</li>
-        </ul>
-        <h2>Hardware Requirements</h2>
-        <ul>
-            <li>Hard Disk – 2 GB</li>
-            <li>RAM – 1 GB</li>
-            <li>Processor – Dual Core or Above</li>
-            <li>Mouse</li>
-            <li>Keyboard</li>
-            <li>Monitor</li>
-            <li>Printer</li>
-        </ul>
-
-        <button type="button" class="btn-close btn-close-white close-button close-button2" aria-label="Close">❌</button>
-
-    </div>
-
-    <div class="project2 project">
-        <h2 style="text-align: center; margin-bottom: 4rem;">Student Database Managment System</h2>
-        <h2>Project Objective</h2>
-        <p> Student Management System deals with all kind of student details, academic related reports,
-            college details, course details, curriculum, batch details and other resource related details
-            too. It tracks all the details of a student from the day one to the end of his course which can
-            be used for all reporting purpose, tracking of attendance, progress in the course, completed
-            semesters years, coming semester year curriculum details, exam details, project or any other
-            assignment details, final exam result etc.
-            Our design can facilitate us to explore all the activities happening in the college, even we
-            can get to know which faculty is assigned to which course, the current status of a student,
-            attendance percentage of a student and upcoming requirements of a student. The student
-            management system is an automated version of manual Student Management System. It
-            can handle all details about a student. The details include college details, subject details,
-            student personnel details, academic details, exam details etc.
-            In case of manual system they need a lot of time, manpower etc. Here almost all work
-            is computerized. So the accuracy is maintained. Maintaining backup is very easy. It can
-            do with in a few minutes. Our system has two type of accessing modes, administrator and
-            user. Student management system is managed by an administrator. It is the job of the
-            administrator to insert update and monitor the whole process. When a user log in to the
-            system. He/she would only view details of the student. He/she can’t perform any changes.
-            Our system has seven modules, they are administrator, student, course, department, exam,
-            attendance, and section. These modules and its attributes with entity relationship module
-            presented in the ER diagram secion.
-        </p>
-        <div class="project-image">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMUEhYUFBMQFxYWGBkaGRgZFyQZGRcZFxkXGxsZGBkZKSkhGRsmHBccIjQjJiosLzA8HCA3OjUtOSouLywBCgoKDg0OHBAQGzEmICYwLi4uLi45MS4uLi4uLjAuLi4uLi4yLi4uLi4uLi4uLi4uLjcuLi4uLi4uLi4uLi4uLv/AABEIAJ8BPQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAgMEBQYHAf/EAEYQAAIBAgMEBQgJAwIFBAMAAAECAwARBBIhBRMxUQYiQZLRFBYyUmFikaEjNEJjcXKBsuEVM7FUkyRTc4LwB0TBwkOi8f/EABkBAQEAAwEAAAAAAAAAAAAAAAABAgMEBf/EACMRAQABAgYDAQEBAAAAAAAAAAABAhIDERMUUVIxMnEEIUH/2gAMAwEAAhEDEQA/ALXY/wDfi/Ov+a6vXKNj/wB+L86/5rq9ba/Lk/J6yblkVVLMQqqCSSbAAC5JJ4ADtqNBtSJ2VA/WcFlUgqzqLXZQwBZRcdYaajmKY6TYSOXCzRSuUSVDGzjiu8soPxIrGbBxe0cPi4cBj8kyyrL5NjIx11MaMSJAwtfJbiDrbV9SMHW6MDXtcd2BtnFRbEwuITESmSbFhXzKjC0mImEnpLfrE3JJJvwtwqy250yxUEW13DhzhpYUhui2iE2UEnKBnsWuM1+AvTMdETaURmaASLvlXOY/tBCQM1vVubXqZXL8djXw21cbOGMzQ7KEgzW6xR7jNkAFri+nOpk+2ccNmyYsTLlbAxzRvZC4nteSyBSu6IZdDcggjtojolJDD/Py0PzrnGztu4tsS8D4lmD7KTFBgiKYpjZSY7L6JvezZqvP/S3MdmYZ3kkkLpmOexsSzXsQATc3N2JOp1oq1PSbB/SXxEQETZJSTlWNibBZGOkZuLWYircG+orl/RTd7zpBvbbveyZ78MmSbNf2WqN0L2piYtm7NjMoUyjEgRkXxEkaLI0W5zAqEXRiXsMoSx1AMif5mOsk24/+X0Fe1ySHbWJxcGxJJJ5EaeeQSbsIAzR7xVcqVIzdW9rZbk6cLWXSLpXiYcSipKjr/UYMOwRQUEUsZvFKWAO+uC3UJC6XtcA3NG9wu0oZJJI0dGkhKiRAesha5XMOy4BIqZXIcbiZocVt6eGZo3gOEkACqyyWibqOGBOUi46pU68asOmvTDFRQSSRyIjphsNMI1XM0TSSqJPKM4y5WDBVUHNxNrAsC5OnUVgdrdJcTFj4klEi4XEeTrHLGquiTFgXimBBYbwMADcWGUgHrWe6L7axeKkaVWTdx4ueGWNsoCRIMsYWwz73NlY3Njnb3QGaNPtXbUGHCtPNHErGwZzlUnlmOl7DhTu1Npw4ePeTyRxoCBmc2FzwF+dUvTvYK42DydrXkEmQn7MioSjfowH6XHbXN9u7RmxPRyVp0dXwojgbN9qZMREjPrxIQKL85JB2UmVdpglV1DKbqwuDa1weB1p2sB0p25NBCFhmVSuz5ZgiKGmDxqhWVs4KCEAEG5BJNgG7GW6QYqWbZCLOYlxuFkkmyRoeusCyBk3itlIY+0cNDRHRaK5v0a6VYmbZ+z5ZJU3k8kscgVQJpghlVRCtsgYZVZmbKoAOopvo30mx2IwezZmbqzTSpiZUQGQiMyCMKgB0bJ1iq6WvoL0zV0yiub4Xb2OjTARYhphJi8RMGdkjSRYkBMSZcqrG7jJcMM3pcDYB7FbS2hHidl4aWdUfEeVLOY1Rg+5UGNwWXqvYgkAZb9ltKZjoVFcmwHSnGiHAyviC+82kcJIpjQLJEXZczWW4kFtCpUcNDqTf7A25i8VNMyFAkGPlgkjbKFECKFBGhcy5yG4gHVaDdV5fW3b438D8K5Ng+leOHk8jYguH2s2DZDHGFaEmwzFVBzjsII9oNaLoWZG2htMvNM4SZECtly5d3dRooIC3IABA1JNySaZo1k+0I0fIzdfLmKgFiqkkBmCg5VuDqbDQ8jT2GxCSIrxsrowBVlN1YHgQRoQedYfpRsvHLi5MZsyeNpVRI58NIOrKEUumU9jWk01Xt63EGJP0vlXD7O2gmaHByPu8TDlUhM5ZVkDlcwRXB4EXGXQXorpNJvrbt8LeI+NYLpbtvGYRIpDv3gKynEPGsZmgMhBiYplsyRi68Be1yeF452jIu08ZMJppEgwCTJEMuVgQz5ACtwGIBuCGva5sAAMnR6K53hdt45tnyYzepkbZ7zK1kLJiUDOd2oUgxWOUhrkZB2kkxtlbaxsk2DjbFyWxWzzO5EcQKSBVOaLqWBN9cwYamwGlmaOm0Vmf/TfbEmK2dh55iGkcOGYADMUkdL2GgJCg6VpqK5j0o+tTfmH7Vqrq06UfWpvzD9q1V1vjw8jE95+yl7H/AL8X51/zXVr1yjDwvJIsaHVrAa2HAVbDoriecen3lYVQ34FdVMTlTm3WMw0ciFJFR0bRlYAqw42YHQj2GmoNnxK4dVGYKVViSxVSQSqZicikqNFsOqOQrFHoniucffoHRPFfd9+sbY5b9avrLUp0ZwYiaEYeEQs2YxgWXMDmBA+zZtRa1rmnY9gYUCVRh4QswtKMotLb1x9o68TrWS808V7nfpKdFcSeBjP4SXpbHJrV9Za3A9HsJE5eOGFXKbsta7GPTqEnUroNDyHKvMP0cwiRNCkEQie+aMDqkE3K27FuSco01NZQdE8Vzj79e+aWK9zv1bY5NavrLXwbFw6OJFhiDiMRBra7oWtH+TQdXhpTuy9mw4ePdQxpGgJIVdAL1i/NLFe536PNLFe536Wxya1fWWpHRvBgyHyeH6Vs0l1uJGBJDSA6Obkm7X41JxuycPK8byRRO0WbdlhcpmFmA9hAtbhWN80sV7nfo80sV7nfqWxya1fWWoXo1gxFHCIIRHE+eNbaI5JJZeV7n415N0ZwTszNh4CXkWVjl1Mi8H9je0cazHmlivc79Hmlivc79LY5NavrLWzbBwrs7tDEWkKtIbf3Slim8HCTKQLBr27LUnHdHsJMzvLBC7SIEcsLlkU3AP4EaHjoKynmlivc79Hmlivc79LY5XWr6y1/9Igup3SdUoQOy8YAjJXgSthYnha41og2Jh0medIo1kc3dwLFjYjMRwzWJ63HU86yHmlivc79Hmlivc79LY5TWr6y3MuHRmVyLsl8pudL6Hh7NKj4vZEEsZhkiiaJmLMhHUZmbOWZeDEuc2vbrWO80sV7nfo80sV7nfpbHJrV9ZavEdHsJIwZ8PExWMxAsLndNe8evFdToeF9K9i2Dhl3REMYMClIj2xqRYhDxW4NjbjWT80sV7nfo80sV7nfpbHJrV9ZalOjeDCxqMPAFhYvEAukbN6RUdl+0cDVNtroTFIsEcCrDFC8j5YpGhbNIuW6SJmyjU3XLrcagAhq/wA0sV7nfo80sV7nfpbHK61fWVzsronGsLQYhmxCb7exiZzK0NlUAJK1mJBDNcAWzke03D7IgLROYo80N903bHm9LKewt2nt7ax3mlivc79IToviTexiNjY2kvY8j7aWxymtX1lrl6OYQKqiCEKkm9QW0WX/AJijsf3uNOR7Fw6ztOsMYle2ZwLFiNAWtoWAJ1461jT0WxN7XjuRe281sLXNuWo+NL80sV7nfpbHJrV9ZapejeEAAEEICy75dOE2n0o5SaDrcakwbLhSWSdI41lltncCxfKLC/tt21h4+jOIa+VojbjaS9uPG3DgfhS26K4kC5MYA4kyaClscmtX1ltJdlws7SZAHcAO6kozhRYKzKQWUDsOmp51BxuzHd0hC4QYIIl48pDq8UiOgQDqbuyAW0ItcX4DMJ0WxJFwYyOYkvw0Pzpfmlivc79LY5XWr6y2mO2bFL/cRWupQ3PFGtmRrekhsLqdDbWknZUG+E+6j3wTJntrk9X2jWsb5pYr3O/R5pYr3O/S2OU1q+stVhujuEjjeKOCJUkDBkAspVvSXLwCntUWBpcewsMpRlhjBjQxoRoUjN+op+yuvAVkvNLFe536PNLFe536Wxya1fWW22dgIYIxFEiRxreyKLKLm5sOy5JP6mpV65/5pYr3O/R5pYr3O/Vyjk1q+soXSj61N+YftWqupW1MJJCxjc9a19GuLEVFrZHhxV/2qZladHvrUP5l/bV0dhYpNEkkMZmgkyllEiL5QZJo1lW28isSQH63Zc3tVJsD61D+Zf8AFdPrXX5df5fWfrEDD7UO8VzmjJy2zR3ZCcYDkPZo2Fvmtor9t7uYXAbRSDdqxUxrh1jCbu2RRhhKCW+2pSfssRINSQMuzorB1s30ewuLE28xDOQcPGlsykCVZZy5Krpco0Wo5HlVNs3Zm0YkgSMFFWWZpVzRkESbQjkHG/8A7ZpuHaR22re0UyGM2BsvGwFQAio0pd7lSzZp52kaQjViYTCFIJsQb2A12V69ryqC9F6KKIL0XoooC9F6KKAvReiigL0XoooC9F6KKAvReiigL0XoooC9Zo9GHGqYh0sHCgBiEL5PQ6+YKGQ2S9gGIXKK0U3D9V/cKcorJjoriM6OcdIWSPICUN7M2FLgNnuA3kxv9r6VutoBT+F6OTLMsr4uR1SYyhGDEWYYsZLlzYZcTGNBb6Aaa6aLeD2/A17vPY3dPhWMZQMy3RZ8xdcQyPmmIKIV6s+JjndWs1zpGEBBHpMbG9qTL0XnKSIuNdVfyj7DXBnfEOCfpADkMyWsB/b9oy6jeexu6fCjeexu6fCqKbYux3gZiZmdWMpyZcqgyzSTZhqdbOVPOwNl1vdX9lJzj3u6fCjeD290+FM0Kv7KL+yk5x73dPhXu89jd0+FMx7f2UX9lJzj3u6fCjOPe7p8KqlX9lF/ZXgb8fhb/Neg0Rznpu3/ABL+xF/bf/5qkq56bfWpPyr+wVTVtp8PKxvafqz2B9ah/Mv+K6BtbaaYePeSXCXsW7F0Ju7GwRdLZiQLkXIrn+wPrUP5l/xXRNoGLKN7axYKL9rOCoUW7TmK27b27a11uz8vrP1DXpHhrEmVVAaRTmBXWEyh9TpYbiTXh1DSMP0mw7KWaTJZ3Qq+jXSdsPwF/SkWw7dRoOFLGxsJKL7mFxd79W4vKGL3HDrCZ7/9RuZpxdi4ezARR2LAtbtZZDMC3NhIxe51uxPbWLqIl29CEMi5nUTQxXUfanaJUILWBX6dCSOy/Gk7M6QRTNlCyK1swDAajeSR6FSftRHjzHOpS7IgCZBEoXMj2HDNFkyN+K7tLflFGG2XFGbpGqnTXt0LsBfjYM7m3C7Me00RMbhVZhNrLI8aDegyJMwuFsBA6RuGtfW7i1r9tWch0qt2YkD5JIREwVWyOrlhlla72bgQzJr7V9lJVabr3m+XhRuveb5eFe9bkvx/ijrcl+P8VB5uveb5eFG695vl4V71uS/H+KOtyX4/xQebr3m+XhRuveb5eFe9bkvx/ijrcl+P8UHm695vl4Ubr3m+XhXvW5L8f4o63Jfj/FB5uveb5eFG695vl4V71uS/H+KOtyX4/wAUHm695vl4Ubr3m+XhXvW5L8f4o63Jfj/FB5uveb5eFG695vl4V71uS/H+KOtyX4/xQebr3m+XhRuveb5eFe9bkvx/ijrcl+P8UDcw0/Vf3Cl0ibh+q/uFLqiCdlo66lusSxtbiyZT2cqVNstWJJknF76CQgC/K3Djpy7KZbD4gockqgktlNh1FKAKPR6xD3bXna540Tx4r7Dw+ne7XvlzqQlgLDqZgTqdRrpWIdj2UozWknu2XUyEkZLWAv2aa89b3vTE2wgVCifFrYWBEpvezC5P2j1u3kKVGuMBa7YYg2y9Vhb0ARx/ORx4gXpt4MaD1JYSN47ddeCEsEj6oGgWxve5PbbiCxsOO6kmRmUWuxzEgszG9we1jqNRpY15H0fhVcozWPHUa3Uqb3GujcePAcABXkMeMZRneBCHF8gJuoZ8w61wLjJb8DfjXq4XFZ779So+zlAJ6ttTbQ31vb9KAi6PQLmyqRmGU630uptZrg+iBry5kk+jYSDKFlxKBVKgLKQNSxJI53Y6/hypuDC4wMpadCoIzDILkAi4uANSO2w/S+jjw4sByskBJIyh1OVVu99Uykkgp8DzoPDsGPdiLeYjIARbeHVSAMpHDLYWAtbU86XBsVVcOJMRcBV1kuGCFiA3PVj8aI4sWc+aSAA3y5VN11WwufdBuSDqb8Blpq2OFtcK3WA4MDlym5Otr5rcBwPDsoJGC2VFAGEYIDWvc34X+HE1LiFhTGHEtjvTEfVyAjne+Y/h86fj4VYHOem31qT8q/sFU1XPTb61J+Vf2Cqat9Ph5GN7T9WewPrUP5l/xXQNrbMWdFRycokR+HHdsGCm/Yba1z/YH1qH8y/4rd7ewUkkQWJ8jhswa+misAGUg51JIBGh7QQwBrXW7fy+s/UWfozG8jyM8hL7ywvbIZN1cqRYgjdaEEHrvzpo9FI8wYSSggyG9lveW2Y6C19OXaeykRYTaO9GaePdb0nqhc5i/wCKIWzR6Hr4UcSfo31ues1Fhdq7pFM+GMgVs7adZjAQpAEdgBPZuHojgeBxdT3zKjuDvsQSL8SD9vEuOzgDiTb/AKUXq63GztlrDwZ2NmF2sWOYrqW48EHsOpOutV2Cw+0RJ9JNAY89za2bIJJzbRANY9wp9ucgiwzXeDVxGgkN3CqHNwbtYZjcKoOt9Qqj2DhQPScKpfN+INmUyj6QSsguI3kCMpJWxy5iQxy8SL63bNcy3sctr9l+F/bbsrLjZe0UUiKaAZmxDkE3ymU4logCyMSFMkA7ABEQARoZI9n6HxOqje4hCsYTq62ATEIOsRc2E2hOt4oj2az8LsBEl3peZzvHks63UM6xDqgAWtugR7Sai4fBbRDlmmg1sOZssmKIuAoHoSYcG1rlHtbQm62TFKqfSvncsx7LKt+qq5VXTKAdbm5OtrVBL3o5N3TRvRybumnL0XoG96OTd00b0cm7ppy9F6Bvejk3dNG9HJu6acvRegb3o5N3TRvRybumnL0XoG96OTd00b0cm7ppy9F6Bvejk3dNG9HJu6acvRegb3o5N3TRvRybumnL0XoGJjp+q/uFLpE//wBl/cKXWQrJNoukZIgkbLmChbkuFTMCNNLnq/4vXrbZ1YLh8S1i4uEGU7s2uDfgSDbt04U8u04gt89wpZTYFrMguw6oOoFPPtCEEqZYgRxBYXGuXhfnpWIhHbBzACDEkZypbJoACwzAj0hdfgf0Jh9sl2C+T4tb9rR2HoZtTfQfZ/H41Ifa8At9NF1iALMDq1rcOF8w19tKfaUQIBljBILekLWVgpN+A6xt8eRoIUe1ZiB/wri5tq2no3v6N7XuOHz0oxG1ZlJAwsj2NrqTwspv1lA+0Roezj6WWY+1YgzKXF0GZtCbDTW4HvD/AMBpv+t4fLn3ilR9oAkaEDiBzYUCItoyEoNw4zZL6+jm3l+IsbZFNtD1xoO1lNuMctsLjOsQCGjylQcwvxtxAvqNDf2VJj25AysyvcLbMQrdW97X00HVOvspf9Xg/wCdEOHpMF9JVYela+jKf1FBEm2/lNvJ8U3WdQVS4JS/okkXBAJH4V7NtaWylMLMQ3HN1WXr5dVF9LdbjwFTV2lESw3sd0vm6w0ta/6AsBfnpxptNrwG1pY9WKDX7Qvp+HVOvA6cxQJwGLkkVjJE0RBsATe4KqbjQdpI/Q1Lj4U2mJR7hGDZQL24dYBgQeBuDfSnI+FWBznpt9ak/Kv7BVNVz02+tSflX9gqmrfT4eRje0/VnsD61D+Zf8VvNuzyoiGIPczRK2VM5EbOA5tY2stzfstWD2B9ah/Mv+K6HtXGiGGSXKz5FLZFtmcgXyrfS5rXW7fy+s/VDDt3F5Y1bCvvDud44RsgzS4dX6ttCI5newY23bX4G09dsTGGKTyWXNIbNH9qPqFutpxuMvK5ve1KPSPD5sokJN1AspIYtHvQF0614+tpxsbai1WsUgYXF+3iLHQ24GsXUym1dp45YEeJJGkZ8TdRCTlWNJjEMtr6siWuRmz2uLgh5NuYolgMJJZZUGZg2sb4yWBiihAGywIsvHg4OvE6migz2wNqzyrlngeNl0LMjjPaOF8wXIFAzSsls3GM2vrljYbaWJO5CwSurtNmkaDdWAE26WRJMroerGC2TKb6G1aiThVDhekd5ooHRleUuLhgy9UzWs1h6SwlluFLAkgHK1pIjnHYhWAdGX6cKCuHaQMmdwwbdg5F3YUiQ2F21NgRSsficWN8I41LLHEyAxmxd1muiv6LWcR3JIABNyL3rT7v2tRu/a1QZg4rEq4EigAzoilIHkVlMjZg2Vbom6yASNYBydSo10+6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQG6X1V+FG6X1V+FG79rUbv2tQNzjT9V/cKXSJuH6r+4UusgwuCjKi8cZv1jdQbkjU/iedey4GJr5o4yTxJUXNiDe/4gH9BUSfZEci2NwDmJyhRcumQm9rg27R+PKk4vYu8N9/i11JGVwLFt5wuDawkt/2r+uIkLsiAKF3MNha10B4AAHXtAAH6CnP6dDp9FD1eHUGmt9NNNTeoJ2CNLT4pSFZbhwD1yzFj1dTdv/1XlXr7BRmYmTEHMpWxe4UFkOlxe/UUak6UFh5FH/y4+FvRHCwFvwsAP0FeLgoxwjjGt/RHE2ufkPgKr16PILHeTki2pYMdJBINWB1zDjx9tet0fiIe5c582pynLmMnogiw/ukcOwfqFg2DjOhjQi97ZRxsRf4EikSbNha+aKI3te6A3sABxHYAB+gqJJsQF5JN7iA0gYdVgMmYRg5NND9GLXva7czXkOxAGuZ8U+liGcEEZctjZRcfa/HWgmLs+EXtFEL8bINbm+umuutH9Lg/5MPG/oLx58ONQG2E2mXFYsWtoXBWwyaEAA8E5/abnXsWwbf+4xetr/SAXIFrmyjU9tBY7lVFlVVFgNBbQaAadgFex8KZhwaxlyub6Rixubi55DsFPR8KsDnPTb61J+Vf2Cqarnpt9ak/Kv7BVNW+nw8jG9p+rPYH1qH8y/4romMmjTKZMurBUuMxLsCAFAuSbX4dl+y9c72B9ah/Mv8Aiui43ApLkzDWNw6EcVcAi4/7WYfgxrXW7fy+s/UODZ+GUlwka3t1WGVRkyqp3bWC23YsbaWNrXN5UWKiDmFSoZFVioFgBIzhdeFyyNoNfiL1k/RTDspU59QoJLAt1SDfMwJFyq37Oqumlex9FcOHD2ckMGF2uLjfXBBFiD5RLxv6WlrLbF1LqOZW9FlP4G/+KcqDs7ZkcKhUvZVC621AJNyQNT4VOoES8Nbfrw/WomDw8KAbsYZQvDIgAXMTwsdLkn51LlGhrOR9DMMIzEFmyFN2QHX0RGIrXGvoACki8wWNWUExuCAzqdCDmikaNxY2Ojowvw00qX1ua/D+aqtnbFihkaRFkzNnJuQdZJJJWt2i7ytoNOHIWtc59Vvl41iDrc1+H80dbmvw/mjOfVb5eNGc+q3y8aA63Nfh/NHW5r8P5ozn1W+XjRnPqt8vGgOtzX4fzR1ua/D+aM59Vvl40Zz6rfLxoDrc1+H80dbmvw/mjOfVb5eNGc+q3y8aA63Nfh/NHW5r8P5ozn1W+XjRnPqt8vGgOtzX4fzR1ua/D+aM59Vvl40Zz6rfLxoDrc1+H80dbmvw/mjOfVb5eNGc+q3y8aBufh+q/uFLpE3D9V/cKXWQqzHishyPCCXJW/AR2GUHTVr3/ml4gYsX3fk51e2dmGhPUFlXs7dfjSV2jJoogkJu6gk2UhFBDXANg17DTiKW+0yp1imtdhopJshtc2HbcFbE3HKxrENSpjSpIbDq2mUAkrb6QG5K3vYo34rbhxdHlVxfye2YX6zXyhjrwtmK5dLWuT7DSBt0dsGLB/6RPYx1I0+z8xzol2zlaQNDiCEy2ZY2bPdSxsAOzhbmaBDR425s8FtCt7knryEhrKNMpjGmvVPC968ngxpXqyQq2QcRcZ7Pc8BpfIe9w7XBtvr5dxiretumtxI5ey/4Wr2Ta7AldxMSDxCnKRnZLhiBc6A294dmtA5JDPdMriwJzXtcgyIdLL2Rhl7L5hrpemHOO1sMGNWt1n1GmUHq6aXvb2WryXbMgW4w8rHKpsPaJLjrAcCgGtvSHDS7v9SkyqdxJqSLX1ABUAnTtBJ56W4mg9k8rDHL5MV1tmLA/ZsCALetr+HGm38tzEqMKV0ABZhwdtdF4lMunYfifZ9thcwEOKJVsptC1jZgCykDrCxJFuNqXJtQq+UwzEHLlKqW1ZSetoAlrWvegkRby13yXtwW5AN2uQTYm4y9nYadj4VHwmNEqZssiakWdSpuLcAeI141Ij4VYHOem31qT8q/sFU1XPTb61J+Vf2Cqat9Ph5GN7T9WewPrUP5l/xXQdsYLfQvDchZFKsQSGCsCOqRwN7fOufbA+tQ/mX/ABW82+J91fD33qkMoFrPku27YtoFe2S/Zmvpatdbt/L6z9U8vR/FPKJXxMZYRmPRCBZ/JDIo16qlsPI3P6W32dZGB2HPGqr5S1lKCw0ARIo0CqDcDrqzHmHtfQERp5NoCKZUQtIxxORyVDLpJucl7KAOpbMDe+trE0jFYvaQkVlhuqknKpUCQBMcACGN1JYYVuP27XADWxzdWS3wWBnQgvPvB1dDcejmBOluIte+hNzoLAXFRME7kHeKAQRawsD1FJtqSesWGoHC1ja5l0CX4dn/AIazGyOjzYeKCOKdFyKomIvaUokUakC9lG7jIt7Qb3FzppgcpsbHsNr29tu2sqy7TsLFToeOW/8AbxAJPZcybgqOy5B4NUkTNn7LmjZGOKDEJCJCdTIYw+8LdtmL3ABstu0aVod8vrL8azMpx+SexfNuF3Vgn93eTaaj0im5vm042trUrGQYhXZ45Z2DSwdQhCFTeXmy9UELu2tqc3U046vKeF5vl9ZfjRvl9ZfjWXjO0Rl113j30XJl8lNie0J5Va1tbH1eFj0Z31p996W/a3C+TJHkzW0vlt/863qKt98vrL8aN8vrL8adooGt8vrL8aN8vrL8adooGt8vrL8aN8vrL8adooGt8vrL8aN8vrL8adooGt8vrL8aN8vrL8adooGt8vrL8aN8vrL8adooI8x0/Vf3Cl0ib/7L+4UushGj2hGOqXGZVuw7QBYXPs1pXl8eYLnUEhiAdLhTZjryIseWnMV5Hg4yLlEuwsxtqQbXBPLQaUp8DGRZkQi97EXF7sb69vWOvtNYhflcf/Mj7w7aScdHexdQbA6m1w3C1+P6Uw2yICbmGIkgAkqCTYgi5PHUA/pS59lwubvFEx5lQT9nt/7R8BQOeWR2BzrrlGmvpnKtwOFzprTUW1IWICyK17WtrfMpcajmovXsWzIVBCxRAHLcBQAct8t7cbXr2LZ0K5csUa5bZcqgWy3Atbha5oG49sQMQqyqScug1PWIA+JYfPkadXaMRLDOt09IE2tdmUXvzZGH6UJgIRa0cYta2g0tlt+xO6vIUmTZsLAhooyG4gqDfUtrz1N6Bb4+IBiXWyAltb2A4nTlXsWOibLldDmFxY8QabTZkIuRFELgg2Uahjcg+wmlDZ8WbPu48xN82UXve978760BBjY5VJjdWA0JGutOR8KQMOiA5FUX1Nha55nmfbS4eFWBznpt9ak/Kv7BVNVz02+tSflX9gqmrfT4eRje0/Vp/SMSGBWKYEWsQCCCAOBFO+SY/li+83jXRZWOlMTYgLbM4GZgovYXY8APaa13u6PzUx/ssD5Jj+WL7zeNHkmP5YvvN41uZdoIuYNIBky5tOG8Nl7O014u0EMjRCT6RcuZLagOGKm1vROVteGhFL128cyw/kmP5YvvN40eSY/li+83jXQd57f8VH2jOyoCGIO8iHZwaWNSP1BIpebeOZYbyTH8sX3m8a98kx/LF95vGug5zzqFLtaJXKNKAw0sR25DJYadZsis1hc2U8jS828cyxfkmP5YvvN40eSY/li+83jW/Mul7+2kQYoOiurgq6hlPYVYXBH4g3pem3jmWD8kx/LF95vGjyTH8sZ3m8a6DnPOo2EnYtKCx6slh7Bu4zb4k/Gl67eOZYfyTH8sX3m8aPJMfyxfebxroOc86hHa0Q13otnEd7XXeFxHkzAWzbxgtr6HTsNLzbxzLF+SY/li+83jR5Jj+WL7zeNdBznnRnPOl5t45lz7yTH8sX3m8aPJMfyxfebxrc46ZlC2JF3QfoWF6kZzzpebeOZc+8kx/LF95vGjyTH8sX3m8a2+L2nHEwWSQKWUsLj7KsisxNrAAyICTwzCnTigHEefrlSwXtKqVVj+hdR+opebeOZYPyTH8sX3m8aPJMfyxfebxrfRThhdWBFyLix1UkEaciCKXnPOl5t45lz7yTH8sX3m8aPJMfyxfebxrc4OdjnuTo7AfgDYU7NiAilmayjiT2UvNvHMsAcHj+WL7zeNHkmP5YvvN410BJri4J+Fu22oOo1FqRisWsaNI7hURWZmPBVUEsT+ABNLzbxzLBeSY/li+83jR5Jj+WL7zeNdCznnUbFzMGiAY9aSx9o3cht8VHwpebeOZYbyTH8sX3m8aPJMfyxfebxroWc86jx7QRmZA92RsjC3osUEgBNrDqMD+o50vNvHMsL5Jj+WL7zeNHkmP5YvvN41vXxYDKhbrMGKjmFtc/pmFKScEkBgSpswFtDYGx5GxB/Wl5t45lgPJMfyxfebxo8kx/LF95vGuhZzzqNs6dmQksSd5KOzgssij4AAUvNvHMsN5Jj+WL7zeNHkmP5YvvN410LOedRxjlMhjznOtrjKdMwJFza2oB7aXm3jmWF8kx/LF95vGjyTH8sX3m8a3q4tS2TOM2unabBSSOYGddRzFO5zzpebeOZc2n2RimuWinYkcSCT8TUHG4RkbLKuVrXseNj/APyunzzMJIhc2ZmBHO0bkfMCsZ07+sj/AKa/5asqas2nFwKaYziW2x2NijI3kkaXvbMwW/DheqjasmFnXK+JjABBGWVAVdXV0cXv1lZARe446VQeeWJ+67p8aPPLE/dd0+NY2S3bmhOfZWBJJ8qGrZv7sfrM9tRzbietpx43mbTiwU5JkxEWa0ihlmVWVZot26hl1ykWaxv1lU9gqm88sT913T40eeWJ+67p8amnK7qhbYXC4COYTLNDvAts29UXuFBJAsLkIl/yJyFTNpbUgZFCzwk72HQSKTpNGT28hes755Yn7runxo88sT913T4005N1Q1f9Xw3+og/3F8aptp4HAzmQyYlPpNSBMgCncvDmXTiEkbjcXN7aCqzzyxP3XdPjR55Yn7runxppym6oSJdkYMzpJ5THlXeMRvVzbx5MNIGU8FW+H1A4527CQVwbIwKFbYiNrbkXeVLhcOHC5coGrB2Vr8Q7DtqL55Yn7runxo88sT913T40sk3OG1n9Yw3+og/3F8ai4PakAaUmeEAyXBMi6jdxC4111Fqzvnlifuu6fGjzyxP3XdPjTTld1Q1n9Xw/+og/3F8aqZMPgzFuRiUWPfCbKJk0cTjEaE3OUyAm1+DEC2lqjzyxP3XdPjR55Yn7runxppym6oSzsfAZQpxQsIt1/dj1W5JJ6urG/bppw430Ee1MMoCrNhgAAABIoAA4AAHQVlfPLE/dd0+NHnlifuu6fGmnJucNo8dtSAhbTwn6RDpIp0DXJ48Kkf1fDf6iD/cXxrKeeWJ+67p8aPPLE/dd0+NNOV3WGuNrRYKdg0mJjsIpIiolQK0czRM4a+uu5UaEaE/iIkmy8CxucUPt/wD5o9d48bkNcdYfRKuvZzNiIXnlifuu6fGjzyxP3XdPjSyU3OGuNnRYOGQyLiUJIYWaVCBmlklNrWI60rDjwAvci9Wf9Xw3+og/3F8aynnlifuu6fGjzyxP3XdPjTTk3OG0eC2pAM954ReRyLyLqLnUa6il4raGGkRkafD5WFiM6EEdoIa4II0IIsbmsx55Yn7runxo88sT913T4005N1Ql4jYuz2ieLykKjoUsJk6qlSpCFgcgtYWGgyiwGt1YjZGz3WQHEIN4MUGIkjuRi2LScQdVJOU8QNLkE1C88sT913T40eeWJ+67p8aacm6oaPZmJwsMYjXEQkBnbWRL3kdnI0sLAsQNOFqMZtSAtFaeE2kJNpFNgIpdTroKzvnlifuu6fGjzyxP3XdPjTTk3OG1f9Xw3+og/wBxfGqfakGFkjxKriYA2JBzZpFKZ90sWa3H0EUWvbSqzzyxP3XdPjR55Yn7runxppybnDTTsrAXuMSo46b2MgZnRza4OUXQCwsB2AHWnNn4DAwujriVJTgGmQg/RwR3IAGtsOhvzLdhtVd55Yn7runxo88sT913T4005NzhtX/V8N/qIP8AcXxqNs3akCobzwi8kxF5FGhmkIPHgRWc88sT913T40rzwxNr/Rd0+NNOTc0NV/V8N/qIP9xfGqzExYN3ldsREd8m7dS8ZUplZcuoJsb3OvED8KqT0vxP3XdPjR534n7runxpZK7ihYbNwWChlEwxSs4UrdpY9Q0eHjNwoGpGFjOnbm7Darn+r4b/AFEH+4vjWW878T913T40ed+J+67p8aWSbihpfLopJoQksTkM5srhjbdPrYVl+nf1kf8ATX/LUHplifuu6fGqvaG0zM+eS17AaDTS/jWVNMw042NTVGUP/9k="
-                alt="">
-        </div>
-        <h2>Project management
-        </h2>
-        <p>Project management skills are put to good use for this project. Having gone through project
-            management modules in Time Series Analysis, Optimization and with two interns Project
-            Management for Business and IT respectively, they enhanced my knowledge on managing a
-            project. Project management focuses on achieving the objectives by applying five processes
-            presented in Figure below.</p>
-        </p>
-        <h2>Student management system </h2>
-        <p> There are many software development companies that offer student management system for
-            schools in the market. There are records on the past years projects on student management
-            system is done by students. Through the researches, it is observed that there are features
-            where this project can adopt and implement. One of it will be with addition of new course
-            or class, or even upgrading of students to the next level, the school administrator can easily
-            register all of them within a particular class into the new one using just a page and not
-            having to register one at a time. With this feature, it helps administrator to save time as
-            well as increase their efficiency.
-        </p>
-        <h2>Software Requirements</h2>
-        <ul>
-            <li>Apache Tomcat Web Server</li>
-            <li>Oracle</li>
-        </ul>
-        <h2>Technology Used</h2>
-        <ul>
-            <li>Java</li>
-            <li>J2EE</li>
-        </ul>
-        <h2>Hardware Requirements</h2>
-        <ul>
-            <li>Hard Disk – 2 GB</li>
-            <li>RAM – 1 GB</li>
-            <li>Processor – Dual Core or Above</li>
-            <li>Mouse</li>
-            <li>Keyboard</li>
-            <li>Monitor</li>
-            <li>Printer</li>
-        </ul>
-
-        <button type="button" class="btn-close btn-close-white close-button close-button2" aria-label="Close">❌</button>
-
-    </div>
-
-    <div class="project3 project">
-        <h2 style="text-align: center; margin-bottom: 4rem;">Portfolio Project</h2>
-        <h2>Project Objective</h2>
-        <p> A portfolio is one of the best ways to showcase your work and build your brand. So, don’t ignore its power
-            to improve your credibility. You will learn how brands put their best to stand out in these best portfolio
-            websites. Yasio is a portfolio website of Jan Baszczok, a web/mobile developer and designer from Poland.
-            This one-page portfolio is impressive with its intuitive and modern design. Specifically, it looks elegant
-            and sleek with a black background and white typography.</p>
-        <div class="project-image">
-            <img src="https://designmodo.com/wp-content/uploads/2017/10/04-drew-rawitz-portfolio-projects.jpg" alt="">
-        </div>
-        <p>Each section of the website reveals Jan.’s outstanding personality and works. Furthermore, the subtle
-            animation it implements strongly enhances the look and feel of the website. The About section also adds
-            creativity to the design by using the close-to-real text editor to exhibit his work experience, education,
-            and skills..</p>
-        <p> An excellent portfolio is a great tool for sharing your expertise with prospective clients and employers.
-            That’s why professionals should consider it a must-have for career growth. So, check out these best
-            portfolio websites we’ve collected to inspire you. Steven Mengin is a Toronto-based French digital designer
-            with exceptional website design. The overall design is pretty simple but can impress the clients well. It
-            also stands out with the integration of GSAP animation. The hero header welcomes the visitor with the
-            designer’s name and an animated background. On his website, his projects are exhibited one at a time once
-            the user scrolls. Then, each project displays quality imagery highlighted using a smooth slider.</p>
-        <p> Any computerized system is susceptible to failure but failure in an ATM system can be catastrophic and even
-            lead to monetary loss. Scheduled on – site maintenance can ensure secure software upgrades and help avoid
-            potential failure. The ATM will be programmed to notify the bank about impending maintenance and will go
-            into a lock down mode in the event of delays of more than 7 days in the maintenance.</p>
-        <h2>Existing System</h2>
-        <p> The existing ATM Simulation System was built for the original concept of regional private banks. Small banks
-            in villages and towns will service the needs of the local community and will only require ledgers to record
-            account details. This system is prone to human error and causes undue frustration to users. This system was
-            augmented with the introduction of excel sheets and emails. Banks could now record all information in an
-            excel sheet and then set an update schedule when they will mail all records to a central hub where these
-            records will again be processed and consolidated to form a unified record of all account transactions. These
-            systems did not enable easy access to money and were greatly prone to grievous errors.</p>
-        <h2>Proposed System</h2>
-        <p> The proposed system aims to solve all this by constant updating of bank records. The Java based construction
-            of the system will enable transactions at any bank or ATM to be registered within a matter of seconds.
-            Security of these details is also a top priority in this system. This central hub will be accessed by an ATM
-            for secure customer transactions.
-
-        </p>
-        <h2>Software Requirements</h2>
-        <ul>
-            <li>Apache Tomcat Web Server</li>
-            <li>Oracle</li>
-        </ul>
-        <h2>Technology Used</h2>
-        <ul>
-            <li>Java</li>
-            <li>J2EE</li>
-        </ul>
-        <h2>Hardware Requirements</h2>
-        <ul>
-            <li>Hard Disk – 2 GB</li>
-            <li>RAM – 1 GB</li>
-            <li>Processor – Dual Core or Above</li>
-            <li>Mouse</li>
-            <li>Keyboard</li>
-            <li>Monitor</li>
-            <li>Printer</li>
-        </ul>
-
-        <button type="button" class="btn-close btn-close-white close-button close-button2" aria-label="Close">❌</button>
-
-    </div>
-
-    */
-
     <div class="menu-item">
         <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
         <ul>
@@ -879,6 +608,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="JQuery.js"></script>
 </body>
 
 </html>
