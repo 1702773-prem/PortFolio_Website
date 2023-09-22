@@ -1,12 +1,11 @@
 
 
-// JavaScript Code
-
 
 // made the header sticky using JavaScript ( IntersectionObserver API)
 
 const header = document.querySelector('#header');
 const home = document.querySelector('#home');
+
 
 const stickyHeader = function (entries) {
 
@@ -115,6 +114,9 @@ headerList[5].addEventListener('click', function () {
     contactContainer.scrollIntoView({ behavior: 'smooth' });
 
 })
+
+
+
 
 
 

@@ -425,7 +425,7 @@
 
             <hr>
 
-            <div class="portfolio-container" id="blog">
+            <div id="blog" class="portfolio-container" >
                 <h5 style="color: red;">VISIT MY BLOG AND KEEP YOUR FEEDBACK</h5>
                 <h2 style="color: whitesmoke;">My BLOG</h2>
                 <div class="portfolio">
@@ -518,28 +518,28 @@
 
 
                         <div class="form">
-                            <form action="index.html" class="contact-form">
+                            <form action="from.php" method="post" target="_self" class="contact-form">
 
                                 <div>
                                     <label for="name">YOUR NAME</label><br />
-                                    <input type="text" id="name" required>
+                                    <input type="text" name="name" id="name" required>
                                 </div>
 
                                 <div id="number">
                                     <label for="phone-number">PHONE NUMBER</label><br />
-                                    <input type="tel" minlength="10" maxlength="10" required>
+                                    <input type="tel" name="mobile" id="phone-number" minlength="10" maxlength="10" required>
 
                                 </div>
 
                                 <div id="email">
                                     <label for="email">EMAIL</label><br />
-                                    <input type="email" required>
+                                    <input type="email" name="email" id="email" required>
                                 </div>
 
                                 <div id="subject">
 
                                     <label for="subject">SUBJECT</label><br />
-                                    <input type="text">
+                                    <input type="text" name="subject" id="subject">
                                 </div>
 
                                 <div id="msg">
@@ -548,7 +548,7 @@
                                 </div>
 
                                 <div id="send-message">
-                                    <button>SEND MESSAGE</button>
+                                    <button id="form-submit">SEND MESSAGE</button>
 
                                 </div>
                             </form>

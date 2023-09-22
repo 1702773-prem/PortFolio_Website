@@ -1,7 +1,5 @@
 
 
-// JQuery Code
-
 
 
 $(document).ready(function () {
@@ -59,10 +57,10 @@ $(document).ready(function () {
 
     $(".brand").hover(function () {
 
-        $(this).animate({ top: '10px' }, 500);
+        $(this).animate({ top: '10px' }, 300);
     },
         function () {
-            $(this).animate({ top: '18px' }, 500);
+            $(this).animate({ top: '18px' }, 0);
         })
 
 
